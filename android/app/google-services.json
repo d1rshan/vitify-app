@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "658117629553",
+    "project_id": "getvitify",
+    "storage_bucket": "getvitify.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658117629553:android:1022b79ca1ecc563cf6dd0",
+        "android_client_info": {
+          "package_name": "com.example.vitify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARgE9yF3Moi0bkp85VNX4uQ_HfaJ_CwEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
