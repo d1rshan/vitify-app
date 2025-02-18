@@ -70,7 +70,6 @@ class _SetupPageState extends ConsumerState<SetupPage> {
       }
     } catch (e) {
       debugPrint("Error fetching mess menu: $e");
-      // debugPrintStack(stackTrace: stack);
     }
   }
 
@@ -187,9 +186,31 @@ class _SetupPageState extends ConsumerState<SetupPage> {
                       ),
                     ),
                     const SizedBox(height: 15),
-                    Text(
-                      'Your timetable',
-                      style: Theme.of(context).textTheme.bodyLarge,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Your timetable',
+                          style: Theme.of(context).textTheme.bodyLarge,
+                        ),
+                        IconButton(
+                          onPressed: () {
+                            showDialog(
+                              context: context,
+                              builder: (context) => AlertDialog(
+                                title: Text(
+                                  'Copy Your Timetable From Vtop',
+                                  style: Theme.of(context).textTheme.bodyLarge,
+                                ),
+                                content: Image.asset('images/vtop.png'),
+                              ),
+                            );
+                          },
+                          icon: Icon(
+                            Icons.help_outline_rounded,
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 5),
                     SizedBox(
